@@ -31,6 +31,21 @@
   	<url-pattern>/HttpServletRequestAPI</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>ServletConfigApi</servlet-name>
+  	<servlet-class>com.cheer.api.ServletConfigApi</servlet-class>
+  	<!-- Servlet 初始化参数 -->
+  	<init-param>
+  		<param-name>Parameter_1</param-name>
+  		<param-value>Parameter_1 Value</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ServletConfigApi</servlet-name>
+  	<url-pattern>/ServletConfigApi</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
   	<welcome-file>/html/login.html</welcome-file>
   </welcome-file-list>
