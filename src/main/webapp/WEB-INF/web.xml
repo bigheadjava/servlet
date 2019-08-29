@@ -97,6 +97,16 @@
   	<url-pattern>/MyServlet3</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>ServletLife</servlet-name>
+  	<servlet-class>com.cheer.life.ServletLife</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ServletLife</servlet-name>
+  	<url-pattern>/ServletLife</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
   	<welcome-file>/html/login.html</welcome-file>
   </welcome-file-list>
