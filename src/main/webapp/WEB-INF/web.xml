@@ -5,6 +5,10 @@
 <web-app>
   <display-name>Servlet Training</display-name>
   
+  <context-param>
+  	<param-name>context_param_1</param-name>
+  	<param-value>context_param_1 value</param-value>
+  </context-param>
   <!-- 定义创建的Servlet -->
   <servlet>
  	<!-- 定义创建的Servlet的名字 -->
@@ -44,6 +48,21 @@
   <servlet-mapping>
   	<servlet-name>ServletConfigApi</servlet-name>
   	<url-pattern>/ServletConfigApi</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServletContextApi</servlet-name>
+  	<servlet-class>com.cheer.api.ServletContextApi</servlet-class>
+  	<!-- Servlet 初始化参数 -->
+  	<init-param>
+  		<param-name>Parameter_1</param-name>
+  		<param-value>Parameter_1 Value</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ServletContextApi</servlet-name>
+  	<url-pattern>/ServletContextApi</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>
