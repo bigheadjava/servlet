@@ -21,4 +21,17 @@
   	<url-pattern>/servlet01</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>HttpServletRequestAPI</servlet-name>
+  	<servlet-class>com.cheer.api.HttpServletRequestApi</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>HttpServletRequestAPI</servlet-name>
+  	<url-pattern>/HttpServletRequestAPI</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>/html/login.html</welcome-file>
+  </welcome-file-list>
 </web-app>
