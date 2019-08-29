@@ -65,6 +65,38 @@
   	<url-pattern>/ServletContextApi</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>MyServlet1</servlet-name>
+  	<servlet-class>com.cheer.load.MyServlet1</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MyServlet1</servlet-name>
+  	<url-pattern>/MyServlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MyServlet2</servlet-name>
+  	<servlet-class>com.cheer.load.MyServlet2</servlet-class>
+  	<load-on-startup>2</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MyServlet2</servlet-name>
+  	<url-pattern>/MyServlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MyServlet3</servlet-name>
+  	<servlet-class>com.cheer.load.MyServlet3</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MyServlet3</servlet-name>
+  	<url-pattern>/MyServlet3</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
   	<welcome-file>/html/login.html</welcome-file>
   </welcome-file-list>
