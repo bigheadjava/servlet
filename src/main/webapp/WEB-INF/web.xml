@@ -9,6 +9,11 @@
   	<param-name>context_param_1</param-name>
   	<param-value>context_param_1 value</param-value>
   </context-param>
+  
+  <listener>
+  	<listener-class>com.cheer.listener.AccessCountListener</listener-class>
+  </listener>
+  
   <!-- 定义创建的Servlet -->
   <servlet>
  	<!-- 定义创建的Servlet的名字 -->
@@ -105,6 +110,26 @@
   <servlet-mapping>
   	<servlet-name>ServletLife</servlet-name>
   	<url-pattern>/ServletLife</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>access1</servlet-name>
+  	<servlet-class>com.cheer.listener.ClientAccessServlet1</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>access1</servlet-name>
+  	<url-pattern>/access1</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>access2</servlet-name>
+  	<servlet-class>com.cheer.listener.ClientAccessServlet2</servlet-class>
+  	<load-on-startup>2</load-on-startup>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>access2</servlet-name>
+  	<url-pattern>/access2</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>
