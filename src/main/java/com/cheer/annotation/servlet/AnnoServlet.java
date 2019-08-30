@@ -1,4 +1,4 @@
-package com.cheer.annotation;
+package com.cheer.annotation.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
