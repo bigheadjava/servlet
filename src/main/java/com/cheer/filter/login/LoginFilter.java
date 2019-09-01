@@ -25,7 +25,7 @@ public class LoginFilter implements Filter {
 		boolean flag = false;
 		if(blockAccountArray != null) {
 			String userName = request.getParameter("userName");
-			if(blockAccountArray != null && userName != null) {
+			if(userName != null) {
 				for(int i = 0; i < blockAccountArray.length; i++) {
 					if(blockAccountArray[i].equals(userName)) {
 						flag = true;

@@ -183,6 +183,6 @@
 	</servlet-mapping>
 
 	<welcome-file-list>
-		<welcome-file>/html/upload.html</welcome-file>
+		<welcome-file>/html/login3.html</welcome-file>
 	</welcome-file-list>
 </web-app>
