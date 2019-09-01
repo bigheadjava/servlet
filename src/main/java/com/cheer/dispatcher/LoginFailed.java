@@ -17,5 +17,6 @@ public class LoginFailed extends HttpServlet {
 		PrintWriter out = resp.getWriter();
 		out.println("<h1><font color=\"pink\">请求到达登陆失败组件...</font></h1><br/>");
 		out.println("<h1><font color=\"red\">登陆失败! 请重新输入用户名和密码!</font></h1>");
+		out.close();
 	}
 }

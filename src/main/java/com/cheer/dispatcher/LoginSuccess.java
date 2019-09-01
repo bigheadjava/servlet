@@ -18,5 +18,6 @@ public class LoginSuccess extends HttpServlet {
 		out.println("<h1><font color=\"pink\">请求到达登陆成功组件...</font></h1><br/>");
 		String userName = req.getParameter("userName");
 		out.println("<h1><font color=\"green\">登陆成功，欢迎您" + userName + "</font></h1>");
+		out.close();
 	}
 }

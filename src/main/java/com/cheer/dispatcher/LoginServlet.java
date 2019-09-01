@@ -21,17 +21,18 @@ public class LoginServlet extends HttpServlet {
 
 		String target;
 		if ("admin".equals(userName) && "password".equals(password)) {
-			target = "LoginSuccess";
+			target = "/LoginSuccess3";
 		} else {
-			target = "LoginFailed";
+			target = "/LoginFailed3";
 		}
 
 		ServletContext ctx = getServletContext();
-		RequestDispatcher dispatcher = ctx.getNamedDispatcher(target);
+		RequestDispatcher dispatcher = ctx.getRequestDispatcher(target);
 
 		PrintWriter out = resp.getWriter();
 		out.println("<h1>转发登陆结果之前...</h1><br/>");
 		dispatcher.forward(req, resp); // 请求转发
 		out.println("<h1>转发登陆结果之后...</h1><br/>");
+		out.close();
 	}
 }
